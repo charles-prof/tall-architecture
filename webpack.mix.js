@@ -1,6 +1,7 @@
 const mix = require("laravel-mix");
 
 require("laravel-mix-tailwind");
+require("laravel-mix-workbox");
 
 /*
  |--------------------------------------------------------------------------
@@ -16,7 +17,10 @@ require("laravel-mix-tailwind");
 mix.js("resources/js/app.js", "public/js/app.js")
     .sass("resources/sass/app.scss", "public/css/app.css")
     .tailwind("./tailwind.config.js")
-    .sourceMaps();
+    // .sourceMaps()
+    .injectManifest({
+        swSrc: "./resources/js/service-worker.js",
+    });
 
 if (mix.inProduction()) {
     mix.version();

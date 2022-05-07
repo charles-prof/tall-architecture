@@ -354,3 +354,32 @@ added 843 packages, and audited 844 packages in 2m
   run `npm fund` for details
 
 found 0 vulnerabilities
+
+PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> npm run prod
+
+> prod
+> npm run production
+
+
+> production
+> mix --production
+
+        Additional dependencies must be installed. This will only take a moment.
+ 
+        Running: npm install workbox-webpack-plugin --save-dev --legacy-peer-deps
+ 
+        Finished. Please run Mix again.
+
+PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> npm i
+npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+
+added 932 packages, and audited 933 packages in 32s
+
+107 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
