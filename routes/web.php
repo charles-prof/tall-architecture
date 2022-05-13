@@ -14,3 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'welcome')->name('home');
+
+Route::view('/news', 'tempnews');
+// Route::view('/news', [Newsfeed::class, 'render']);
