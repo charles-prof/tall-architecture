@@ -233,7 +233,6 @@ $ git stash drop
 Dropped refs/stash@{0} (edf0bf08e1727921f4ca35be5800f0f2f74dbfdb)
 
 PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git checkout -b auth
-
 Switched to a new branch 'auth'
 
 PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git stash pop 
@@ -251,5 +250,60 @@ Unmerged paths:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
-=======
-Switched to a new branch 'auth'
+
+PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git commit -m "branching and stashing the conflicts in logs and learning docs"    
+[main 21a9142] branching and stashing the conflicts in logs and learning docs
+ 2 files changed, 99 insertions(+), 1 deletion(-)
+ create mode 100644 logs/lt_git.md
+
+ PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git diff .\package.json
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+diff --git a/package.json b/package.json
+index 636b8ba..304a217 100644
+--- a/package.json
++++ b/package.json
+@@ -10,17 +10,19 @@
+         "production": "mix --production"
+     },
+     "devDependencies": {
+-        "@tailwindcss/forms": "^0.3",
++        "@tailwindcss/forms": "^0.4.0",
+         "@tailwindcss/typography": "^0.4",
+-        "alpinejs": "^3.2",
++        "alpinejs": "^3.4.2",
++        "autoprefixer": "^10.4.2",
+         "laravel-mix": "^6.0.6",
+         "laravel-mix-tailwind": "^0.1",
+         "laravel-mix-workbox": "^0.1.4",
+-        "postcss": "^8.1.14",
++        "postcss": "^8.4.6",
++        "postcss-import": "^14.0.2",
+         "resolve-url-loader": "^3.1",
+         "sass": "^1.32",
+         "sass-loader": "^8.0",
+-        "tailwindcss": "^2.2",
++        "tailwindcss": "^3.0.18",
+         "workbox-webpack-plugin": "^6.5.3"
+     }
+
+$ git commit -m "merge complete, laravel breeze installed for referencing the authorization, authentication views and routes"
+[auth d0c7d74] merge complete, laravel breeze installed for referencing the authorization, authentication views and routes
+
+$ git merge auth
+Auto-merging logs/git-log.txt
+CONFLICT (content): Merge conflict in logs/git-log.txt
+Auto-merging public/js/app.js
+CONFLICT (content): Merge conflict in public/js/app.js
+Automatic merge failed; fix conflicts and then commit the result.
+
+$ git commit =m "merge auth branch after installing laravel breeze"
+fatal: cannot do a partial commit during a merge.
+
+It looks like you may be committing a merge.
+# If this is not correct, please run
+#       git update-ref -d MERGE_HEAD
+# and try again.
+
+$ gib -d auth
+Deleted branch auth (was d0c7d74).
