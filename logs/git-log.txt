@@ -186,6 +186,12 @@ The file will have its original line endings in your working directory
 warning: LF will be replaced by CRLF in tests/Unit/ExampleTest.php.
 The file will have its original line endings in your working directory
 warning: LF will be replaced by CRLF in webpack.mix.js.
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+The file will have its original line endings in your working directory
+=======
+>>>>>>> main
 The file will have its original line endings in your working directory
 
 $ git merge #1-sample-api-implementation
@@ -230,4 +236,64 @@ $ git stash drop
 Dropped refs/stash@{0} (201280346b8546c83928887e72423e0918ea02a4)
 
 $ git stash drop
+<<<<<<< HEAD
 Dropped refs/stash@{0} (edf0bf08e1727921f4ca35be5800f0f2f74dbfdb)
+=======
+Dropped refs/stash@{0} (edf0bf08e1727921f4ca35be5800f0f2f74dbfdb)
+
+PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git checkout -b auth
+Switched to a new branch 'auth'
+>>>>>>> Stashed changes
+
+PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git stash pop 
+CONFLICT (modify/delete): logs/lt_git.md deleted in Updated upstream and modified in Stashed changes. Version Stashed changes of logs/lt_git.md left in tree.
+Auto-merging logs/git-log.txt
+CONFLICT (content): Merge conflict in logs/git-log.txt
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+        both modified:   logs/git-log.txt
+        deleted by us:   logs/lt_git.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+The stash entry is kept in case you need it again.
+>>>>>>> main
+
+PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git commit -m "branching and stashing the conflicts in logs and learning docs"    
+[main 21a9142] branching and stashing the conflicts in logs and learning docs
+ 2 files changed, 99 insertions(+), 1 deletion(-)
+ create mode 100644 logs/lt_git.md
+
+ PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git diff .\package.json
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+diff --git a/package.json b/package.json
+index 636b8ba..304a217 100644
+--- a/package.json
++++ b/package.json
+@@ -10,17 +10,19 @@
+         "production": "mix --production"
+     },
+     "devDependencies": {
+-        "@tailwindcss/forms": "^0.3",
++        "@tailwindcss/forms": "^0.4.0",
+         "@tailwindcss/typography": "^0.4",
+-        "alpinejs": "^3.2",
++        "alpinejs": "^3.4.2",
++        "autoprefixer": "^10.4.2",
+         "laravel-mix": "^6.0.6",
+         "laravel-mix-tailwind": "^0.1",
+         "laravel-mix-workbox": "^0.1.4",
+-        "postcss": "^8.1.14",
++        "postcss": "^8.4.6",
++        "postcss-import": "^14.0.2",
+         "resolve-url-loader": "^3.1",
+         "sass": "^1.32",
+         "sass-loader": "^8.0",
+-        "tailwindcss": "^2.2",
++        "tailwindcss": "^3.0.18",
+         "workbox-webpack-plugin": "^6.5.3"
+     }

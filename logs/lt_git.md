@@ -25,3 +25,7 @@ https://www.atlassian.com/git/tutorials/using-branches/git-checkout
 
 
 upstream usually means central repository - https://stackoverflow.com/questions/2739376/definition-of-downstream-and-upstream/2749166#2749166
+
+git merge <branch>/<file> and git commit -a 
+git stash and git checkout main and git stash pop
+git stash apply to again git stash pop on the branch or git merge main

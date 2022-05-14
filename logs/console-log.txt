@@ -383,3 +383,59 @@ added 932 packages, and audited 933 packages in 32s
   run `npm fund` for details
 
 found 0 vulnerabilities
+
+Session contents restored from 5/13/2022 at 5:38:44 PM 
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.   
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> composer require laravel/breeze --dev
+Info from https://repo.packagist.org: #StandWithUkraine
+Using version ^1.9 for laravel/breeze
+./composer.json has been updated
+Running composer update laravel/breeze
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 1 install, 0 updates, 0 removals
+  - Locking laravel/breeze (v1.9.0)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 1 install, 0 updates, 0 removals
+  - Downloading laravel/breeze (v1.9.0)
+  - Installing laravel/breeze (v1.9.0): Extracting archive
+Package swiftmailer/swiftmailer is abandoned, you should avoid using it. Use symfony/mailer instead.
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+Discovered Package: facade/ignition
+Discovered Package: fruitcake/laravel-cors
+Discovered Package: laravel-frontend-presets/tall
+Discovered Package: laravel/breeze
+Discovered Package: laravel/sail
+Discovered Package: laravel/sanctum
+Discovered Package: laravel/tinker
+Discovered Package: laravel/ui
+Discovered Package: livewire/livewire
+Discovered Package: nesbot/carbon
+Discovered Package: nunomaduro/collision
+Package manifest generated successfully.
+78 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+> @php artisan vendor:publish --tag=laravel-assets --ansi --force
+No publishable resources for tag [laravel-assets].
+Publishing complete.
+
+PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> php artisan breeze:install
+Breeze scaffolding installed successfully.
+Please execute the "npm install && npm run dev" command to build your assets.
+
+PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> npm i
+
+added 3 packages, removed 22 packages, changed 4 packages, and audited 914 packages in 16s
+
+105 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
