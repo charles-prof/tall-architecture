@@ -307,3 +307,16 @@ It looks like you may be committing a merge.
 
 $ gib -d auth
 Deleted branch auth (was d0c7d74).
+
+PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git commit -m "laravel fortify installed for reference and frontend views from breeze utilized"
+[auth d1bddf0] laravel fortify installed for reference and frontend views from breeze utilized
+ 14 files changed, 861 insertions(+), 59 deletions(-)
+ create mode 100644 app/Actions/Fortify/CreateNewUser.php
+ create mode 100644 app/Actions/Fortify/PasswordValidationRules.php
+ create mode 100644 app/Actions/Fortify/ResetUserPassword.php
+ create mode 100644 app/Actions/Fortify/UpdateUserPassword.php
+ create mode 100644 app/Actions/Fortify/UpdateUserProfileInformation.php
+ create mode 100644 app/Providers/FortifyServiceProvider.php
+ create mode 100644 config/fortify.php
+ create mode 100644 database/migrations/2014_10_12_200000_add_two_factor_columns_to_users_table.php
+ rewrite routes/auth.php (95%)
