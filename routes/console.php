@@ -2,6 +2,11 @@
 
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Mail;
+
+use App\Mail\TestMail;
+use App\Models\User;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +22,9 @@ use Illuminate\Support\Facades\Artisan;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
+
+Artisan::command('email:test {userid=1}', function ($userid) {
+    $user = User::find($userid);
+    $this->info("Sending email to: {$user->name}!");
+    Mail::to('example@mailinator.net')->send(new TestMail($user));
+})->purpose('command for sending test email');
