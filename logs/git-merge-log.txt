@@ -1,0 +1,40 @@
+$ git merge auth
+Updating e923322..7be4f56
+Fast-forward
+ .env.example                                       |   4 +-
+ app/Actions/Fortify/CreateNewUser.php              |  41 +++
+ app/Actions/Fortify/PasswordValidationRules.php    |  18 ++
+ app/Actions/Fortify/ResetUserPassword.php          |  30 +++
+ app/Actions/Fortify/UpdateUserPassword.php         |  35 +++
+ .../Fortify/UpdateUserProfileInformation.php       |  61 +++++
+ app/Http/Kernel.php                                |   2 +-
+ app/Mail/TestMail.php                              |  42 +++
+ app/Providers/FortifyServiceProvider.php           |  73 ++++++
+ composer.json                                      |   1 +
+ composer.lock                                      | 285 ++++++++++++++++++++-
+ config/app.php                                     |   1 +
+ config/fortify.php                                 | 147 +++++++++++
+ ...00000_add_two_factor_columns_to_users_table.php |  50 ++++
+ logs/console-log.txt                               |  64 ++++-
+ logs/git-log.txt                                   |  15 +-
+ public/css/app.css                                 |   3 +
+ resources/views/emails/tests/delivered.blade.php   |  18 ++
+ routes/auth.php                                    |  80 +++---
+ routes/console.php                                 |  11 +
+ 20 files changed, 935 insertions(+), 46 deletions(-)
+ create mode 100644 app/Actions/Fortify/CreateNewUser.php
+ create mode 100644 app/Actions/Fortify/PasswordValidationRules.php
+ create mode 100644 app/Actions/Fortify/ResetUserPassword.php
+ create mode 100644 app/Actions/Fortify/UpdateUserPassword.php
+ create mode 100644 app/Actions/Fortify/UpdateUserProfileInformation.php
+ create mode 100644 app/Mail/TestMail.php
+ create mode 100644 app/Providers/FortifyServiceProvider.php
+ create mode 100644 config/fortify.php
+ create mode 100644 database/migrations/2014_10_12_200000_add_two_factor_columns_to_users_table.php
+ create mode 100644 resources/views/emails/tests/delivered.blade.php
+
+$ gib -d auth
+Deleted branch auth (was 7be4f56).
+
+ $ git checkout -b auth-roles
+Switched to a new branch 'auth-roles'
