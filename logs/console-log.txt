@@ -501,3 +501,120 @@ Publishing complete.
 PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> php artisan migrate
 Migrating: 2014_10_12_200000_add_two_factor_columns_to_users_table
 Migrated:  2014_10_12_200000_add_two_factor_columns_to_users_table (281.69ms)
+
+$ composer require jeremykenedy/laravel-roles
+Info from https://repo.packagist.org: #StandWithUkraine
+Using version ^8.1 for jeremykenedy/laravel-roles
+./composer.json has been updated
+Running composer update jeremykenedy/laravel-roles
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 3 installs, 0 updates, 0 removals
+  - Locking eklundkristoffer/seedster (5.0)
+  - Locking jeremykenedy/laravel-roles (v8.1.0)
+  - Locking laravel/helpers (v1.5.0)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 3 installs, 0 updates, 0 removals
+  - Downloading laravel/helpers (v1.5.0)
+  - Downloading eklundkristoffer/seedster (5.0)
+  - Downloading jeremykenedy/laravel-roles (v8.1.0)
+  - Installing laravel/helpers (v1.5.0): Extracting archive
+  - Installing eklundkristoffer/seedster (5.0): Extracting archive
+  - Installing jeremykenedy/laravel-roles (v8.1.0): Extracting archive
+Package swiftmailer/swiftmailer is abandoned, you should avoid using it. Use symfony/mailer instead.
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+Discovered Package: eklundkristoffer/seedster
+Discovered Package: facade/ignition
+Discovered Package: fruitcake/laravel-cors
+Discovered Package: jeremykenedy/laravel-roles
+Discovered Package: laravel-frontend-presets/tall
+Discovered Package: laravel/breeze
+Discovered Package: laravel/fortify
+Discovered Package: laravel/sail
+Discovered Package: laravel/sanctum
+Discovered Package: laravel/tinker
+Discovered Package: laravel/ui
+Discovered Package: livewire/livewire
+Discovered Package: nesbot/carbon
+Discovered Package: nunomaduro/collision
+Package manifest generated successfully.
+79 packages you are using are looking for funding.
+Use the `composer fund` command to find out more!
+> @php artisan vendor:publish --tag=laravel-assets --ansi --force
+No publishable resources for tag [laravel-assets].
+Publishing complete.
+
+$ php artisan vendor:publish --tag=laravelroles
+Copied File [\vendor\jeremykenedy\laravel-roles\src\config\roles.php] To [\config\roles.php]
+Copied Directory [\vendor\jeremykenedy\laravel-roles\src\Database\Migrations] To [\database\migrations]
+Copied Directory [\vendor\jeremykenedy\laravel-roles\src\Database\Seeders\publish] To [\database\seeders]
+Publishing complete
+
+$ php artisan migrate
+Migrating: 2016_01_15_105324_create_roles_table
+Migrated:  2016_01_15_105324_create_roles_table (181.28ms)
+Migrating: 2016_01_15_114412_create_role_user_table
+Migrated:  2016_01_15_114412_create_role_user_table (323.77ms)
+Migrating: 2016_01_26_115212_create_permissions_table
+Migrated:  2016_01_26_115212_create_permissions_table (71.96ms)
+Migrating: 2016_01_26_115523_create_permission_role_table
+Migrated:  2016_01_26_115523_create_permission_role_table (257.75ms)
+Migrating: 2016_02_09_132439_create_permission_user_table
+Migrated:  2016_02_09_132439_create_permission_user_table (266.23ms)
+
+$ composer dump-autoload
+Generating optimized autoload files
+> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+Discovered Package: eklundkristoffer/seedster
+Discovered Package: facade/ignition
+Discovered Package: fruitcake/laravel-cors
+Discovered Package: jeremykenedy/laravel-roles
+Discovered Package: laravel-frontend-presets/tall
+Discovered Package: laravel/breeze
+Discovered Package: laravel/fortify
+Discovered Package: laravel/sail
+Discovered Package: laravel/sanctum
+Discovered Package: laravel/tinker
+Discovered Package: laravel/ui
+Discovered Package: livewire/livewire
+Discovered Package: nesbot/carbon
+Discovered Package: nunomaduro/collision
+Package manifest generated successfully.
+Generated optimized autoload files containing 5428 classes
+
+$ php artisan migrate --seed
+Migrating: 2016_01_15_105324_create_roles_table
+Migrated:  2016_01_15_105324_create_roles_table (93.84ms)
+Migrating: 2016_01_15_114412_create_role_user_table
+Migrated:  2016_01_15_114412_create_role_user_table (347.57ms)
+Migrating: 2016_01_26_115212_create_permissions_table
+Migrated:  2016_01_26_115212_create_permissions_table (57.95ms)
+Migrating: 2016_01_26_115523_create_permission_role_table
+Migrated:  2016_01_26_115523_create_permission_role_table (203.38ms)
+Migrating: 2016_02_09_132439_create_permission_user_table
+Migrated:  2016_02_09_132439_create_permission_user_table (232.62ms)
+Seeding: DefaultPermissionitemsTableSeeder
+Seeding: DefaultPermissionitemsTableSeeder - Permission:view.users
+Seeding: DefaultPermissionitemsTableSeeder - Permission:create.users
+Seeding: DefaultPermissionitemsTableSeeder - Permission:edit.users
+Seeding: DefaultPermissionitemsTableSeeder - Permission:delete.users
+Seeding: DefaultRoleItemsTableSeeder
+Seeding: DefaultRoleItemsTableSeeder - Role:admin
+Seeding: DefaultRoleItemsTableSeeder - Role:user
+Seeding: DefaultRoleItemsTableSeeder - Role:unverified
+Seeding: DefaultConnectRelationshipsSeeder
+Seeding: DefaultConnectRelationshipsSeeder - Role:Admin attached to Permission:view.users
+Seeding: DefaultConnectRelationshipsSeeder - Role:Admin attached to Permission:create.users
+Seeding: DefaultConnectRelationshipsSeeder - Role:Admin attached to Permission:edit.users
+Seeding: DefaultConnectRelationshipsSeeder - Role:Admin attached to Permission:delete.users
+Seeding: Database\Seeders\PermissionsTableSeeder
+Seeded:  Database\Seeders\PermissionsTableSeeder (3.90ms)
+Seeding: Database\Seeders\RolesTableSeeder
+Seeded:  Database\Seeders\RolesTableSeeder (2.42ms)
+Seeding: Database\Seeders\ConnectRelationshipsSeeder
+Seeded:  Database\Seeders\ConnectRelationshipsSeeder (8.12ms)
+Database seeding completed successfully.
