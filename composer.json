@@ -10,6 +10,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "jeremykenedy/laravel-roles": "^8.1",
         "laravel-frontend-presets/tall": "^4.0",
+        "laravel-views/laravel-views": "^2.4",
         "laravel/fortify": "^1.13",
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",

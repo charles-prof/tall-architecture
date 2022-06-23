@@ -30,4 +30,7 @@ Laravel uses sessions to keep track of authenticated users. Its possible that th
 To avoid this causing issues in your views, I'd advise null checking Auth::user() or making use of Auth::check() with a blade if-block.
 
 If you want to modify the SESSION_LIFETIME, take a look at config/session.php
- 
+
+https://stackoverflow.com/questions/52288946/jquery-datatable-error-cannot-read-property-mdata-of-undefined
+You had 6 ths but had 7 tds in both of the rows. The number of th must match with the number of td. Adding a hidden th fixed it
+https://stackoverflow.com/questions/25377637/datatables-cannot-read-property-mdata-of-undefined

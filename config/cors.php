@@ -26,6 +26,8 @@ return [
         'sanctum/csrf-cookie',
         'user/profile-information',
         'email/verification-notification',
+        // 'https://cdn.datatables.net/',
+        // 'https://code.jquery.com/'
       ],
 
     'allowed_methods' => ['*'],

@@ -19,17 +19,22 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ url(mix('css/app.css')) }}">
         @livewireStyles
-
+        {{-- @laravelViewsStyles(laravel-views) --}}
+        @laravelViewsStyles
+        
         <!-- Scripts -->
         <script src="{{ url(mix('js/app.js')) }}" defer></script>
-
+        
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
     </head>
-
+    
     <body>
         @yield('body')
-
+        
         @livewireScripts
+        {{-- @laravelViewsScripts(laravel-views) --}}
+        @laravelViewsScripts()
     </body>
-</html>
+    </html>
+    

@@ -12,7 +12,9 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-
+@livewireStyles
+        {{-- @laravelViewsStyles(laravel-views) --}}
+        @laravelViewsStyles
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
@@ -37,5 +39,8 @@
                 @endisset
             </main>
         </div>
+         @livewireScripts
+        {{-- @laravelViewsScripts(laravel-views) --}}
+        @laravelViewsScripts()
     </body>
 </html>

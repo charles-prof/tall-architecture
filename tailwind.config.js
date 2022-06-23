@@ -15,5 +15,15 @@ module.exports = {
         },
     },
 
+    purge: {
+        content: [
+            './app/**/*.php',
+            './resources/**/*.html',
+            './resources/**/*.js',
+            './resources/**/*.php',
+            "./vendor/laravel-views/**/*.php"
+        ],
+    },
+
     plugins: [require('@tailwindcss/forms')],
 };

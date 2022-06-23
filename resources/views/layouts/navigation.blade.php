@@ -47,6 +47,12 @@
                         </form>
                     </x-slot>
                 </x-dropdown>
+                @else 
+                    <a href="{{ route('login') }}" class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">Log in</a>
+
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}" class="ml-4 font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">Register</a>
+                    @endif
                 @endif
             </div>
 
@@ -91,6 +97,12 @@
                 </form>
             </div>
         </div>
+        @else 
+            <a href="{{ route('login') }}" class="block pl-4 font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">Log in</a>
+
+            @if (Route::has('register'))
+                <a href="{{ route('register') }}" class="block pl-4 py-2 font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">Register</a>
+            @endif
         @endif
     </div>
 </nav>
