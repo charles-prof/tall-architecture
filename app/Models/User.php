@@ -22,6 +22,15 @@ class User extends Authenticatable implements MustVerifyEmail
         'name',
         'email',
         'password',
+        'display_name',
+        'first_name',
+        'last_name',
+        'middle_name',
+        'gender',
+        'phone_no',
+        'type',
+        'status',
+        'meta_data',
     ];
 
     /**
@@ -32,6 +41,11 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $hidden = [
         'password',
         'remember_token',
+        'email_verified_at',
+        'created_at',
+        'updated_at',
+        'aadhar',
+        'type'
     ];
 
     /**
@@ -42,4 +56,16 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * one to many jobs relation with user
+     * @todo should change this code to recruiter model
+     *
+     * @return void
+     */
+    public function jobs()
+    {
+        return $this->hasMany(JobListing::class);
+    }
+
 }

@@ -618,3 +618,41 @@ Seeded:  Database\Seeders\RolesTableSeeder (2.42ms)
 Seeding: Database\Seeders\ConnectRelationshipsSeeder
 Seeded:  Database\Seeders\ConnectRelationshipsSeeder (8.12ms)
 Database seeding completed successfully.
+
+$ composer require mediconesystems/livewire-datatables
+Info from https://repo.packagist.org: #StandWithUkraine
+Using version ^0.9.4 for mediconesystems/livewire-datatables
+./composer.json has been updated
+Running composer update mediconesystems/livewire-datatables
+Loading composer repositories with package information
+Updating dependencies
+Lock file operations: 8 installs, 0 updates, 0 removals
+  - Locking ezyang/htmlpurifier (v4.14.0)
+  - Locking maatwebsite/excel (3.1.40)
+  - Locking maennchen/zipstream-php (2.2.1)
+  - Locking markbaker/complex (3.0.1)
+  - Locking markbaker/matrix (3.0.0)
+  - Locking mediconesystems/livewire-datatables (v0.9.4)      
+  - Locking myclabs/php-enum (1.8.3)
+  - Locking phpoffice/phpspreadsheet (1.23.0)
+Writing lock file
+Installing dependencies from lock file (including require-dev)
+Package operations: 8 installs, 0 updates, 1 removal
+  - Downloading markbaker/matrix (3.0.0)
+  - Downloading markbaker/complex (3.0.1)
+  - Downloading ezyang/htmlpurifier (v4.14.0)
+  - Downloading phpoffice/phpspreadsheet (1.23.0)
+  - Downloading maatwebsite/excel (3.1.40)
+  - Downloading mediconesystems/livewire-datatables (v0.9.4)
+  - Removing laravel-views/laravel-views (v2.4.0)
+  - Installing markbaker/matrix (3.0.0): Extracting archive
+  - Installing markbaker/complex (3.0.1): Extracting archive
+  - Installing myclabs/php-enum (1.8.3): Extracting archive
+  - Installing maennchen/zipstream-php (2.2.1): Extracting archive
+  - Installing ezyang/htmlpurifier (v4.14.0): Extracting archive
+  - Installing phpoffice/phpspreadsheet (1.23.0): Extracting archive
+  - Installing maatwebsite/excel (3.1.40): Extracting archive
+  - Installing mediconesystems/livewire-datatables (v0.9.4): Extracting archive
+4 package suggestions were added by new dependencies, use `composer suggest` to see details.
+Package swiftmailer/swiftmailer is abandoned, you should avoid using it. Use symfony/mailer instead.
+Generating optimized autoload files

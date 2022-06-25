@@ -235,7 +235,7 @@ Dropped refs/stash@{0} (edf0bf08e1727921f4ca35be5800f0f2f74dbfdb)
 PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git checkout -b auth
 Switched to a new branch 'auth'
 
-PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git stash pop 
+PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git stash pop
 CONFLICT (modify/delete): logs/lt_git.md deleted in Updated upstream and modified in Stashed changes. Version Stashed changes of logs/lt_git.md left in tree.
 Auto-merging logs/git-log.txt
 CONFLICT (content): Merge conflict in logs/git-log.txt
@@ -251,7 +251,7 @@ Unmerged paths:
 no changes added to commit (use "git add" and/or "git commit -a")
 The stash entry is kept in case you need it again.
 
-PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git commit -m "branching and stashing the conflicts in logs and learning docs"    
+PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git commit -m "branching and stashing the conflicts in logs and learning docs"
 [main 21a9142] branching and stashing the conflicts in logs and learning docs
  2 files changed, 99 insertions(+), 1 deletion(-)
  create mode 100644 logs/lt_git.md
@@ -320,3 +320,30 @@ PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> git commit -m "larav
  create mode 100644 config/fortify.php
  create mode 100644 database/migrations/2014_10_12_200000_add_two_factor_columns_to_users_table.php
  rewrite routes/auth.php (95%)
+
+ auth-roles switched while when it is not shown on git log --oneline
+
+ $ git checkout auth-roles
+Switched to branch 'auth-roles'
+A       app/Http/Livewire/JobsTable.php
+M       app/Http/Livewire/Newsfeed.php
+A       app/Models/JobListing.php
+M       app/Models/User.php
+M       composer.json
+M       composer.lock
+A       database/factories/JobListingFactory.php
+M       database/factories/UserFactory.php
+A       database/migrations/2022_05_01_150116_add_user_profile_columns_to_users_table.php
+A       database/migrations/2022_05_16_232026_create_job_listings_table.php
+M       database/seeders/DatabaseSeeder.php
+M       logs/console-log.txt
+M       package-lock.json
+M       package.json
+M       public/css/app.css
+M       public/js/app.js
+M       resources/css/app.css
+M       resources/js/bootstrap.js
+M       resources/views/dashboard.blade.php
+M       resources/views/layouts/app.blade.php
+M       routes/web.php
+M       webpack.mix.js
