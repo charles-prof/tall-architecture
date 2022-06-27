@@ -1,5 +1,10 @@
 import Alpine from 'alpinejs';
+// require('./../../vendor/wire-elements/modal/resources/js/modal');
+import './../../vendor/wire-elements/modal/resources/js/modal';
+
 window.Alpine = Alpine;
+
+import './../../vendor/power-components/livewire-powergrid/dist/powergrid';
 Alpine.start();
 
 /**

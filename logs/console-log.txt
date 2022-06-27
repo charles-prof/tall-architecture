@@ -365,9 +365,9 @@ PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> npm run prod
 > mix --production
 
         Additional dependencies must be installed. This will only take a moment.
- 
+
         Running: npm install workbox-webpack-plugin --save-dev --legacy-peer-deps
- 
+
         Finished. Please run Mix again.
 
 PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> npm i
@@ -384,10 +384,10 @@ added 932 packages, and audited 933 packages in 32s
 
 found 0 vulnerabilities
 
-Session contents restored from 5/13/2022 at 5:38:44 PM 
+Session contents restored from 5/13/2022 at 5:38:44 PM
 
 Windows PowerShell
-Copyright (C) Microsoft Corporation. All rights reserved.   
+Copyright (C) Microsoft Corporation. All rights reserved.
 
 Try the new cross-platform PowerShell https://aka.ms/pscore6
 
@@ -488,12 +488,12 @@ Use the `composer fund` command to find out more!
 > @php artisan vendor:publish --tag=laravel-assets --ansi --force
 No publishable resources for tag [laravel-assets].
 Publishing complete.
-PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"    
+PS C:\Users\Games\practice\laravel\tall\studentL-earn-path> php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"
 Copied File [\vendor\laravel\fortify\stubs\CreateNewUser.php] To [\app\Actions\Fortify\CreateNewUser.php]
 Copied File [\vendor\laravel\fortify\stubs\FortifyServiceProvider.php] To [\app\Providers\FortifyServiceProvider.php]
 Copied File [\vendor\laravel\fortify\stubs\PasswordValidationRules.php] To [\app\Actions\Fortify\PasswordValidationRules.php]
 Copied File [\vendor\laravel\fortify\stubs\ResetUserPassword.php] To [\app\Actions\Fortify\ResetUserPassword.php]
-Copied File [\vendor\laravel\fortify\stubs\UpdateUserProfileInformation.php] To [\app\Actions\Fortify\UpdateUserProfileInformation.php]       
+Copied File [\vendor\laravel\fortify\stubs\UpdateUserProfileInformation.php] To [\app\Actions\Fortify\UpdateUserProfileInformation.php]
 Copied File [\vendor\laravel\fortify\stubs\UpdateUserPassword.php] To [\app\Actions\Fortify\UpdateUserPassword.php]
 Copied Directory [\vendor\laravel\fortify\database\migrations] To [\database\migrations]
 Publishing complete.
@@ -618,3 +618,43 @@ Seeded:  Database\Seeders\RolesTableSeeder (2.42ms)
 Seeding: Database\Seeders\ConnectRelationshipsSeeder
 Seeded:  Database\Seeders\ConnectRelationshipsSeeder (8.12ms)
 Database seeding completed successfully.
+
+$ php artisan powergrid:create
+
+
+     __     ____                          ______     _     __
+    / /_,  / __ \____ _      _____  _____/ ____/____(_)___/ /
+    /_ ,' / /_/ / __ \ | /| / / _ \/ ___/ / __/ ___/ / __  /
+    /'   / ____/ /_/ / |/ |/ /  __/ /  / /_/ / /  / / /_/ /
+        /_/    \____/|__/|__/\___/_/   \____/_/  /_/\__,_/
+
+
+ What is the name of your Table Component? (E.g., UserTable) [PowerGridTable]:
+ > usertable
+
+ Create Datasource with [M]odel or [C]ollection? (Default: Model) [M]:
+ >
+
+ Enter your Model name or file path (E.g., User or App\Models\User) [User]:
+ >
+
+
+ ?[32mCreate columns based on Model's ?[39m?[33mfillable?[39m?[32m property? (yes/no)?[39m [?[33mno?[39m]:
+ > yes
+
+?[32m
+� It seems you are using the plugin ?[39m?[33mTailwindcss/form?[39m?[32m.
+   Please check: ?[39m?[33mhttps://livewire-powergrid.com/#/get-started/configure?id=_43-tailwind-forms?[39m?[32m for more information.?[39m
+
+?[33mComponent is ready!?[39m
+?[33m===================?[39m
+
+?[32m
+⚡ ?[39m?[33musertable.php?[39m?[32m was successfully created at [?[39m?[33mApp/Http/Livewire/?[39m?[32m].?[39m
+?[32m
+⚡ Your PowerGrid table can be now included with the tag: ?[39m?[33m<livewire:usertable/>?[39m
+?[32m
+
+⭐ ?[39m?[33mThanks!?[39m?[32m Please consider ?[39m?[33mstarring?[39m?[32m our repository at ?[39m?[33mhttps://github.com/Power-Components/livewire-pow
+ergrid?[39m?[32m ⭐
+?[39m

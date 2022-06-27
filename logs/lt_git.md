@@ -7,6 +7,8 @@ git checkout -b ＜new-branch＞ ＜existing-branch＞
 git merge-base feature main
 git remote show origingib -r
 
+git ls-files | xargs cat | wc -l  [26 jun 2022] LOC estimation
+xargs will let you cat all the files together before passing them to wc, git ls-files | xargs wc -l
 git ls-files -s            - a debug utility for inspecting the state of the Staging Index tree.
 git reset
 
@@ -29,3 +31,9 @@ upstream usually means central repository - https://stackoverflow.com/questions/
 git merge <branch>/<file> and git commit -a 
 git stash and git checkout main and git stash pop
 git stash apply to again git stash pop on the branch or git merge main
+
+git config --global http.postBuffer 524288000  error: RPC failed; curl 18 transfer closed with out
+https://stackoverflow.com/questions/38618885/error-rpc-failed-curl-transfer-closed-with-outstanding-read-data-remaining
+
+git config --global http.version HTTP/1.1      error: RPC failed; curl 92 HTTP/2 stream 0 was not closed cleanly: CANCEL (err 8)
+https://stackoverflow.com/questions/59282476/error-rpc-failed-curl-92-http-2-stream-0-was-not-closed-cleanly-protocol-erro
